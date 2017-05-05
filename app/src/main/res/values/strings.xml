@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">JA-Nextstep</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
-</resources>
+    <string name="imgdesc">imgdesc</string>
+    <!--Titles -->
+    <string-array name="titles">
+        <item>Junior Achievement</item>
+        <item>JA Stem Summit</item>
+        <item> Dover Area School District</item>
+    </string-array>
+    <!--Website urls -->
+    <string-array name="urls">
+        <item>https://www.juniorachievement.org/web/ja-usa/home</item>
+        <item>https://www.juniorachievement.org/web/ja-scpa/stem-summit</item>
+        <item>http://www.doversd.org/</item>
+    </string-array>
+    <!--Icons -->
+    <string-array name="icons"></string-array>
+    </resources>
