@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity
             // older android version, disable hardware acceleration
             mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
-        mWebView.loadUrl("http://www.doversd.org/");
+        mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
 
         Log.i(TAG,"onCreate");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
