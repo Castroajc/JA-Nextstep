@@ -17,7 +17,7 @@
     <WebView
         android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
 
     <include
         layout="@layout/app_bar_main"
