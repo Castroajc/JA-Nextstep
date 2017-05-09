@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //this is the start of the code that makes the Webview work
         mWebView = (WebView)findViewById(R.id.webView);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -27,9 +28,10 @@ public class MainActivity extends AppCompatActivity {
             mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }
         mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
-
+        //start of the code that keeps new Webpages inside the Webview
         this.mWebView.setWebViewClient(new WebViewClient(){
-
+            //the new method just has a WebResourceRequest input box instead of the String url
+            //method will work perfectly fine for the webview
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url){
                 view.loadUrl(url);
