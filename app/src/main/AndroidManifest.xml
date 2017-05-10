@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.pltw.examples.ja_nextstep">
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21"/>
+        android:targetSdkVersion="25"
+        android:hardwareAccelerated="true"/>
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

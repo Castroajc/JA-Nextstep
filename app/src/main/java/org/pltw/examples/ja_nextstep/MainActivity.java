@@ -20,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
         mWebView = (WebView)findViewById(R.id.webView);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             // chromium, enable hardware acceleration
-            mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        } else {
+         //   mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        //} else {
             // older android version, disable hardware acceleration
-            mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        }
+         //   mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        //}
         mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
         //start of the code that keeps new Webpages inside the Webview
         this.mWebView.setWebViewClient(new WebViewClient(){
