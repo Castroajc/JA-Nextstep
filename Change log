@@ -1,0 +1,10 @@
+5/5/2017
+I have a basis for my WebView app
+It has white bars on the outside of the Webview
+Started to implemente an array of Webpages to put the navigation drawer to use
+5/10/2017
+I abandoned the array of Webpages since the code needs an Icon for each webpage
+So far in this week I have implemented my code so that it no longer has any side bars or padding on the outside of the webpage.
+New urls now stay within the application
+Upon testing my app I found out that changing the screen orientation (vertical/horizontal) refreshed the webpage
+I fixed that bug so now it no longer refreshes 
