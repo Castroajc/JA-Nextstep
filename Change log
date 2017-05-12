@@ -8,3 +8,6 @@ So far in this week I have implemented my code so that it no longer has any side
 New urls now stay within the application
 Upon testing my app I found out that changing the screen orientation (vertical/horizontal) refreshed the webpage
 I fixed that bug so now it no longer refreshes 
+5/12/2017
+Today i Changed the Layout so that the webview is below the tab bar and that nothing is overtop the other
+The pressing the Back button now goes to the previous page
