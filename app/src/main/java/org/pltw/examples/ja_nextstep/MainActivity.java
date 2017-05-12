@@ -3,6 +3,7 @@ package org.pltw.examples.ja_nextstep;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
@@ -11,6 +12,7 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
     private WebView mWebView;
+    private String url = "https://www.juniorachievement.org/web/ja-usa/home";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +26,9 @@ public class MainActivity extends AppCompatActivity {
         mWebView = (WebView)findViewById(R.id.webView);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        mWebView.loadUrl(url);
 
-        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            // chromium, enable hardware acceleration
-         //   mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        //} else {
-            // older android version, disable hardware acceleration
-         //   mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-        //}
-        mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
-        //start of the code that keeps new Webpages inside the Webview
+        //This code that keeps new Web pages inside the WebView(method obtained from Terence Lui from stackoverflow)
         this.mWebView.setWebViewClient(new WebViewClient(){
             //the new method just has a WebResourceRequest input box instead of the String url
             //method will work perfectly fine for the webview
@@ -49,6 +44,23 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    // this code allows the user to go to the previous page when back button is pressed (method obtained from user Foamy guy on stackoverflow
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            switch (keyCode) {
+                case KeyEvent.KEYCODE_BACK:
+                    if (mWebView.canGoBack()) {
+                        mWebView.goBack();
+                    } else {
+                        finish();
+                    }
+                    return true;
+            }
+
+        }
+        return super.onKeyDown(keyCode, event);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
