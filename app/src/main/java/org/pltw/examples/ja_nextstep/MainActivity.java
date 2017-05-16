@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             switch (keyCode) {
                 case KeyEvent.KEYCODE_BACK:
                     if (mWebView.canGoBack()) {
+
                         mWebView.goBack();
                     } else {
                         finish();
@@ -71,9 +72,11 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
         }
-
+        if(id == R.id.more_settings) {
+            mWebView.loadUrl("https://www.juniorachievement.org/web/ja-scpa/stem-summit");
+        }
         return super.onOptionsItemSelected(item);
     }
 
