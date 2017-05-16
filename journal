@@ -6,3 +6,5 @@ implement a different method of webview, this method uses an array of strings to
 website for the navigate drawer. Upon going to Junior Achievement’s website I realize that doing
 a webview for my app may not be what they want since in their plan, that I got through email, 
 includes a pin function that I have not found on their base website.
+5/12/2017
+
