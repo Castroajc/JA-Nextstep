@@ -1,5 +1,6 @@
 package org.pltw.examples.ja_nextstep;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -76,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
         }
         if(id == R.id.more_settings) {
             mWebView.loadUrl("https://www.juniorachievement.org/web/ja-scpa/stem-summit");
+        }
+        if(id == R.id.information_settings){
+            //loads info page
+            Intent intent = new Intent(MainActivity.this, InformationPage.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
