@@ -26,9 +26,6 @@
         <activity
             android:name=".InformationPage"
             android:label="@string/activity_name" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".InformationPage" />
         </activity>
     </application>
 
