@@ -1,4 +1,5 @@
-5/5/2017 This week I started the writing the code for a webview app and finished it to the extent that it
+5/5/2017
+This week I started the writing the code for a webview app and finished it to the extent that it
 starts up and displays the website. The biggest struggle so far has been today when android
 studio has given me an error with the xml base code. There is also a bug that creates a small
 greyish bars on the side of the app that I need to figure out how to get rid of. I have started to 
@@ -7,4 +8,21 @@ website for the navigate drawer. Upon going to Junior Achievement’s website I 
 a webview for my app may not be what they want since in their plan, that I got through email, 
 includes a pin function that I have not found on their base website.
 5/12/2017
-
+This week I took a good step toward creating my app, I found out how to add in the webview on 
+the page without borders. I figured out that adding in the array of strings would need an image 
+for UI and I knew it would take me too long to figure it out so I had to scrap that idea. This week
+was adding in a bunch of little features that make the application more convenient such as adding 
+in a feature that does not refresh the webview upon changing the orientation. The hardest 
+challenge this week is still removing the borders on the webview since I had to look at other 
+android projects and inferring what would work. I felt like I made some really good process for 
+my application since the only things next are changing the url of the webview and creating an 
+information page.
+5/19/2017
+This week I only finished up setting up the webview to show the Junior Achievement home page 
+and Stem Summit page. I used the default android studio settings navigation drawer so that the
+user can navigate between the two pages and the information page. The hardest objective this 
+week so far has been to figure out what is piece is good enough to give off a summary of what
+Junior Achievement does. I know that I want the information short but precise since new users 
+will skip over long boring pieces of information. My other working time has been split into 
+tweaking the code for the webview such as changing the toolbar to lime green so that it 
+represents Junior Achievements colors more.
