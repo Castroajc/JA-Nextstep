@@ -39,13 +39,15 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:text="@string/ja_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
-        android:layout_marginTop="45dp"
         android:ems="10"
-        android:inputType="textPersonName"/>
+        android:inputType="textCapSentences|textMultiLine|textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="@string/ja_info"/>
 
 </RelativeLayout>

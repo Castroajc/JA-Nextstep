@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        //this is the settings navigation tool
         if (id == R.id.action_settings) {
             mWebView.loadUrl("https://www.juniorachievement.org/web/ja-usa/home");
         }

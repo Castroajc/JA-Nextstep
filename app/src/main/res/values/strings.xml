@@ -6,6 +6,8 @@
     <string name="stem_summit_link">Stem Summit</string>
     <string name="info_page">About JA</string>
     <string name="activity_name">Info</string>
-    <string name="ja_info">hello</string>
-    <string name="ja_stem_info">whatup</string>
+    <string name="ja_info">Junior Achievement is the nation\'s largest organization dedicated to giving young people the knowledge and skills for
+    their own economic success, plan for the future, and make smart academic and economic choices</string>
+    <string name="ja_stem_info">The STEM Summit  is a day to show kids that careers can be cool, the goal of the STEM to pursue an academic STEM focus
+    in order to prepare them for STEM careers in the future</string>
     </resources>

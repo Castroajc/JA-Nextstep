@@ -12,7 +12,8 @@ public class InformationPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //set the view for the activity to be the xml layout screen that has the FrameLayout that will contain the trip fragment (which in turn uses fragment_trip.xml)
+        //set the view for the activity to be the xml layout screen that has the FrameLayout that will contain the trip fragment
+        // (which in turn uses fragment_trip.xml)
         setContentView(R.layout.information_page);
     }
 }
